@@ -37,8 +37,8 @@ catalogs:
       specifier: 0.1.1
       version: 0.1.1
     '@microsoft/api-extractor':
-      specifier: 7.59.4
-      version: 7.59.4
+      specifier: 7.60.0
+      version: 7.60.0
     '@rollup/plugin-babel':
       specifier: 7.1.0
       version: 7.1.0
@@ -130,7 +130,7 @@ importers:
         version: 10.0.1(eslint@10.13.0(jiti@2.7.0))
       '@lazyconfig/cli':
         specifier: 'catalog:'
-        version: 0.2.0(@microsoft/api-extractor@7.59.4(@types/node@26.6.5))
+        version: 0.2.0(@microsoft/api-extractor@7.60.0(@types/node@26.6.5))
       '@lazyconfig/presets':
         specifier: 'catalog:'
         version: 0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(@rollup/plugin-babel@7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5))(@rollup/plugin-node-resolve@16.0.3(rollup@4.63.5))(@rollup/plugin-terser@1.0.0(rollup@4.63.5))(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.12.0)(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))(rollup@4.63.5)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))
@@ -181,13 +181,13 @@ importers:
         version: 8.0.1(@babel/core@8.0.7)
       '@lazyconfig/cli':
         specifier: 'catalog:'
-        version: 0.2.0(@microsoft/api-extractor@7.59.4(@types/node@26.6.5))
+        version: 0.2.0(@microsoft/api-extractor@7.60.0(@types/node@26.6.5))
       '@lazyconfig/presets':
         specifier: 'catalog:'
         version: 0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(@rollup/plugin-babel@7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5))(@rollup/plugin-node-resolve@16.0.3(rollup@4.63.5))(@rollup/plugin-terser@1.0.0(rollup@4.63.5))(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.12.0)(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))(rollup@4.63.5)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))
       '@microsoft/api-extractor':
         specifier: 'catalog:'
-        version: 7.59.4(@types/node@26.6.5)
+        version: 7.60.0(@types/node@26.6.5)
       '@rollup/plugin-babel':
         specifier: 'catalog:'
         version: 7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5)
@@ -1370,8 +1370,8 @@ packages:
     resolution: {integrity: sha512-UpCnItIJwu03iNTWtJVKv8Qbf0MXN7WLQZUail9cpAQmnZiIX36YPRRoRxz0pocwytzUpmJhstsLkyW5tsaHBA==}
     engines: {node: '>=20.9.0'}
 
-  '@microsoft/api-extractor@7.59.4':
-    resolution: {integrity: sha512-XqseDKIw736qlhQwS9SOpbY4veOiP2Nc7YiWmgXXBmeA3kY9qGXw+Tu7DFpU9FvXywE1z8SvLJKUVxFpcX0kig==}
+  '@microsoft/api-extractor@7.60.0':
+    resolution: {integrity: sha512-z744eKZNJ75h4WlsJiEa8oqbRUfczNe5MexweXe9kcm/phhZBZqfkDZCzHR5dDf8FdZvNapYK/wRPnSUAKuoug==}
     engines: {node: '>=20.9.0'}
     hasBin: true
 
@@ -3397,11 +3397,6 @@ packages:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
-  typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-
   typescript@6.0.3:
     resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
@@ -4860,12 +4855,12 @@ snapshots:
 
   '@lazyconfig/api-extractor@0.1.0': {}
 
-  '@lazyconfig/cli@0.2.0(@microsoft/api-extractor@7.59.4(@types/node@26.6.5))':
+  '@lazyconfig/cli@0.2.0(@microsoft/api-extractor@7.60.0(@types/node@26.6.5))':
     dependencies:
       consola: 3.4.2
       yargs: 18.1.0
     optionalDependencies:
-      '@microsoft/api-extractor': 7.59.4(@types/node@26.6.5)
+      '@microsoft/api-extractor': 7.60.0(@types/node@26.6.5)
 
   '@lazyconfig/commitlint@0.1.0': {}
 
@@ -4953,7 +4948,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@microsoft/api-extractor@7.59.4(@types/node@26.6.5)':
+  '@microsoft/api-extractor@7.60.0(@types/node@26.6.5)':
     dependencies:
       '@microsoft/api-extractor-model': 7.33.15(@types/node@26.6.5)
       '@microsoft/tsdoc': 0.17.1
@@ -4967,7 +4962,7 @@ snapshots:
       resolve: 1.22.13
       semver: 7.7.4
       source-map: 0.6.1
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@types/node'
 
@@ -6951,8 +6946,6 @@ snapshots:
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
-
-  typescript@5.9.3: {}
 
   typescript@6.0.3: {}
 
