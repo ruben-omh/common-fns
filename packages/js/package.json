@@ -1,6 +1,6 @@
 {
 	"name": "@common-fns/js",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Small, focused, tree-shakeable utility functions for JavaScript and TypeScript - arrays, dates, maps, numbers, objects, sets, strings, and values - with per-domain subpath exports and dual ESM/CJS output.",
 	"type": "module",
 	"files": [
