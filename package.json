@@ -1,0 +1,44 @@
+{
+	"name": "@common-fns/monorepo",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Monorepo for common-fns: small, focused, tree-shakeable utility functions for JavaScript and TypeScript.",
+	"scripts": {
+		"build": "turbo build",
+		"test": "turbo test",
+		"typecheck": "turbo typecheck",
+		"lint": "eslint .",
+		"dev": "turbo dev",
+		"clean": "turbo clean",
+		"clean:reset": "turbo clean && rimraf .turbo pnpm-lock.yaml node_modules",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@changesets/changelog-github": "catalog:",
+		"@changesets/cli": "catalog:",
+		"@commitlint/cli": "catalog:",
+		"@commitlint/config-conventional": "catalog:",
+		"@lazyconfig/cli": "catalog:",
+		"@lazyconfig/presets": "catalog:",
+		"@eslint/js": "catalog:",
+		"eslint": "catalog:",
+		"eslint-config-prettier": "catalog:",
+		"eslint-plugin-n": "catalog:",
+		"globals": "catalog:",
+		"husky": "catalog:",
+		"lint-staged": "catalog:",
+		"prettier": "catalog:",
+		"rimraf": "catalog:",
+		"turbo": "catalog:",
+		"typescript": "catalog:",
+		"typescript-eslint": "catalog:"
+	},
+	"packageManager": "pnpm@11.5.2",
+	"engines": {
+		"node": ">=22.0.0",
+		"pnpm": ">=10.0.0"
+	},
+	"author": "ruben-omh",
+	"license": "MIT",
+	"private": true
+}

@@ -1,0 +1,1 @@
+lazyconfig hook commit-signoff -f $1

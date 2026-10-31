@@ -1,0 +1,24 @@
+{
+	"extends": ["@lazyconfig/presets/commitlint"],
+	"rules": {
+		"scope-enum": [
+			2,
+			"always",
+			[
+				"contributing",
+				"commitlint",
+				"changeset",
+				"ci",
+				"js",
+				"deps",
+				"eslint",
+				"jest",
+				"prettier",
+				"release",
+				"turbo",
+				"husky",
+				"repo"
+			]
+		]
+	}
+}
