@@ -119,7 +119,8 @@
 		"dts": "lazyconfig compile types --tsc tsconfig.lib.json --aec api-extractor.*.json --ext mts cts",
 		"build": "pnpm dts && rollup --config",
 		"dev": "tsc -p tsconfig.lib.json --watch",
-		"clean": "rimraf out-tsc dist coverage reports tsconfig.*.tsbuildinfo node_modules",
+		"clean": "rimraf out-tsc dist coverage reports tsconfig.*.tsbuildinfo .turbo",
+		"clean:reset": "pnpm clean && rimraf node_modules",
 		"test": "jest"
 	},
 	"devDependencies": {
@@ -172,7 +173,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ruben-omh/common-fns",
+		"url": "git+https://github.com/ruben-omh/common-fns.git",
 		"directory": "packages/js"
 	},
 	"author": "ruben-omh",
