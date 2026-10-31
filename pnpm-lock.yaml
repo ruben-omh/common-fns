@@ -73,8 +73,8 @@ catalogs:
       specifier: 18.5.0
       version: 18.5.0
     globals:
-      specifier: 17.12.0
-      version: 17.12.0
+      specifier: 17.13.0
+      version: 17.13.0
     husky:
       specifier: 9.1.7
       version: 9.1.7
@@ -133,7 +133,7 @@ importers:
         version: 0.2.0(@microsoft/api-extractor@7.59.4(@types/node@26.6.5))
       '@lazyconfig/presets':
         specifier: 'catalog:'
-        version: 0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(@rollup/plugin-babel@7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5))(@rollup/plugin-node-resolve@16.0.3(rollup@4.63.5))(@rollup/plugin-terser@1.0.0(rollup@4.63.5))(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.12.0)(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))(rollup@4.63.5)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))
+        version: 0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(@rollup/plugin-babel@7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5))(@rollup/plugin-node-resolve@16.0.3(rollup@4.63.5))(@rollup/plugin-terser@1.0.0(rollup@4.63.5))(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.13.0)(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))(rollup@4.63.5)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))
       eslint:
         specifier: 'catalog:'
         version: 10.13.0(jiti@2.7.0)
@@ -145,7 +145,7 @@ importers:
         version: 18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
       globals:
         specifier: 'catalog:'
-        version: 17.12.0
+        version: 17.13.0
       husky:
         specifier: 'catalog:'
         version: 9.1.7
@@ -184,7 +184,7 @@ importers:
         version: 0.2.0(@microsoft/api-extractor@7.59.4(@types/node@26.6.5))
       '@lazyconfig/presets':
         specifier: 'catalog:'
-        version: 0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(@rollup/plugin-babel@7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5))(@rollup/plugin-node-resolve@16.0.3(rollup@4.63.5))(@rollup/plugin-terser@1.0.0(rollup@4.63.5))(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.12.0)(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))(rollup@4.63.5)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))
+        version: 0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(@rollup/plugin-babel@7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5))(@rollup/plugin-node-resolve@16.0.3(rollup@4.63.5))(@rollup/plugin-terser@1.0.0(rollup@4.63.5))(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.13.0)(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))(rollup@4.63.5)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))
       '@microsoft/api-extractor':
         specifier: 'catalog:'
         version: 7.59.4(@types/node@26.6.5)
@@ -2636,8 +2636,8 @@ packages:
     resolution: {integrity: sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==}
     engines: {node: '>=18'}
 
-  globals@17.12.0:
-    resolution: {integrity: sha512-cezEd/DTyyht9cvSSURyygXPfy04GtWO/5e6ZPvH7fCtjKz9PYOmuawphw1Ctd1f6C+5JypXfGD7ahNMXvevBA==}
+  globals@17.13.0:
+    resolution: {integrity: sha512-RwMTC61u7hrG3ZJMkZQOK4JLJrKS8QtoTii63EmWvFXHqycY9FObBJQCbsLxSO8kjKhWE5kV1GC+Vb1g3RI0Zg==}
     engines: {node: '>=18'}
 
   globrex@0.1.2:
@@ -4869,14 +4869,14 @@ snapshots:
 
   '@lazyconfig/commitlint@0.1.0': {}
 
-  '@lazyconfig/eslint@0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.12.0)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))':
+  '@lazyconfig/eslint@0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.13.0)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.13.0(jiti@2.7.0))
       eslint: 10.13.0(jiti@2.7.0)
     optionalDependencies:
       eslint-config-prettier: 10.1.8(eslint@10.13.0(jiti@2.7.0))
       eslint-plugin-n: 18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
-      globals: 17.12.0
+      globals: 17.13.0
       typescript-eslint: 8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
 
   '@lazyconfig/jest@0.2.0(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))':
@@ -4887,11 +4887,11 @@ snapshots:
       '@swc/jest': 0.2.39(@swc/core@1.16.18)
       jest-junit: 17.0.0
 
-  '@lazyconfig/presets@0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(@rollup/plugin-babel@7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5))(@rollup/plugin-node-resolve@16.0.3(rollup@4.63.5))(@rollup/plugin-terser@1.0.0(rollup@4.63.5))(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.12.0)(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))(rollup@4.63.5)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))':
+  '@lazyconfig/presets@0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(@rollup/plugin-babel@7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5))(@rollup/plugin-node-resolve@16.0.3(rollup@4.63.5))(@rollup/plugin-terser@1.0.0(rollup@4.63.5))(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.13.0)(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))(rollup@4.63.5)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))':
     dependencies:
       '@lazyconfig/api-extractor': 0.1.0
       '@lazyconfig/commitlint': 0.1.0
-      '@lazyconfig/eslint': 0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.12.0)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))
+      '@lazyconfig/eslint': 0.1.1(@eslint/js@10.0.1(eslint@10.13.0(jiti@2.7.0)))(eslint-config-prettier@10.1.8(eslint@10.13.0(jiti@2.7.0)))(eslint-plugin-n@18.5.0(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(globals@17.13.0)(typescript-eslint@8.62.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))
       '@lazyconfig/jest': 0.2.0(@swc/core@1.16.18)(@swc/jest@0.2.39(@swc/core@1.16.18))(jest-junit@17.0.0)(jest@30.5.2(@types/node@26.6.5))
       '@lazyconfig/prettier': 0.1.0
       '@lazyconfig/rollup': 0.1.1(@rollup/plugin-babel@7.1.0(@babel/core@8.0.7)(@types/babel__core@7.20.5)(rollup@4.63.5))(@rollup/plugin-node-resolve@16.0.3(rollup@4.63.5))(@rollup/plugin-terser@1.0.0(rollup@4.63.5))(rollup@4.63.5)
@@ -6067,7 +6067,7 @@ snapshots:
 
   globals@15.15.0: {}
 
-  globals@17.12.0: {}
+  globals@17.13.0: {}
 
   globrex@0.1.2: {}
 
