@@ -26,11 +26,11 @@ import { isNumber } from "./isNumber";
  */
 export function range(start: number, end: number, step = 1): number[] {
 	if (!isNumber(start) || !isNumber(end) || !isNumber(step)) {
-		throw new RangeError(`range: start, end, and step must be finite numbers.`);
+		throw new RangeError(`range(): start, end, and step must be finite numbers.`);
 	}
 
 	if (step === 0) {
-		throw new RangeError(`range: step cannot be 0, the sequence would never reach ${end}.`);
+		throw new RangeError(`range(): step cannot be 0, the sequence would never reach ${end}.`);
 	}
 
 	// A step pointing away from `end` yields a negative length, which floors to an

@@ -10,6 +10,6 @@
  * isFiniteNumber(Infinity); // false
  * isFiniteNumber("42");     // false
  */
-export function isFiniteNumber(value: unknown): value is number | bigint {
+export function isFiniteNumber(value: unknown): value is number {
 	return Number.isFinite(value);
 }
