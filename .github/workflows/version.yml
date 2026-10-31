@@ -163,6 +163,7 @@ jobs:
       - name: Create Version PR
         uses: changesets/action@ae32849d5ba541f9ae29e40e22a623bc13562f51 # v2.1.2
         with:
+          github-token: ${{ steps.app-token.outputs.token }}
           version-script: pnpm changeset version
           # format.signOff handles the trailer on commits made via `git commit`
           # internally by the action. The explicit Signed-off-by below is a
@@ -172,5 +173,3 @@ jobs:
 
             Signed-off-by: ${{ steps.bot.outputs.bot-name }} <${{ steps.bot.outputs.bot-email }}>
           pr-title: "chore(release): version packages"
-        env:
-          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
