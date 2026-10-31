@@ -30,6 +30,7 @@ describe("omit", () => {
 	});
 
 	it("ignores keys the object does not have", () => {
-		expect(omit({ a: 1 }, ["z"])).toEqual({ a: 1 });
+		const source: Record<string, number> = { a: 1 };
+		expect(omit(source, ["z"])).toEqual({ a: 1 });
 	});
 });

@@ -12,7 +12,8 @@ describe("pick", () => {
 	});
 
 	it("leaves a missing key missing rather than undefined", () => {
-		const result = pick({ a: 1 }, ["a", "b"]);
+		const source: { a: number; b?: number } = { a: 1 };
+		const result = pick(source, ["a", "b"]);
 		expect(Object.hasOwn(result, "b")).toBe(false);
 	});
 

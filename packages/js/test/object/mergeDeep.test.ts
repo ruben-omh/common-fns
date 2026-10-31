@@ -34,7 +34,8 @@ describe("mergeDeep", () => {
 
 	it("deep-copies a plain-object override when the base has no such key", () => {
 		const override = { added: { deep: 1 } };
-		const result = mergeDeep({}, override);
+		const base: { added?: { deep: number } } = {};
+		const result = mergeDeep(base, override);
 		expect(result.added).toEqual({ deep: 1 });
 		expect(result.added).not.toBe(override.added);
 	});
