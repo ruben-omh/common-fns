@@ -1,0 +1,12 @@
+export { chunk } from "./chunk";
+export { createMatrix } from "./createMatrix";
+export { includesAny } from "./includesAny";
+export { includesAll } from "./includesAll";
+export { isOneOf } from "./isOneOf";
+export { createOneOfGuard } from "./createOneOfGuard";
+export { keyBy } from "./keyBy";
+export { partition } from "./partition";
+export { uniqueBy } from "./uniqueBy";
+export { binarySearch, findInsertionIndex } from "./binarySearch";
+export { insertSorted } from "./insertSorted";
+export type { SearchComparator } from "./types";

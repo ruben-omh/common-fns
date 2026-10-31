@@ -1,0 +1,10 @@
+{
+	"extends": "@lazyconfig/presets/tsconfig/lib",
+	"compilerOptions": {
+		"composite": false,
+		"types": ["node", "jest"],
+		"noEmit": true,
+		"incremental": false
+	},
+	"include": ["test"]
+}

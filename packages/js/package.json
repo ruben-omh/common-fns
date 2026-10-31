@@ -1,0 +1,180 @@
+{
+	"name": "@common-fns/js",
+	"version": "0.0.0",
+	"description": "Small, focused, tree-shakeable utility functions for JavaScript and TypeScript - arrays, dates, maps, numbers, objects, sets, strings, and values - with per-domain subpath exports and dual ESM/CJS output.",
+	"type": "module",
+	"files": [
+		"dist",
+		"package.json",
+		"README.md",
+		"LICENSE"
+	],
+	"main": "./dist/common-fns.js.index.min.cjs",
+	"module": "./dist/common-fns.js.index.min.mjs",
+	"types": "./dist/common-fns.js.index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/common-fns.js.index.d.ts",
+			"import": {
+				"types": "./dist/common-fns.js.index.d.mts",
+				"default": "./dist/common-fns.js.index.min.mjs"
+			},
+			"require": {
+				"types": "./dist/common-fns.js.index.d.cts",
+				"default": "./dist/common-fns.js.index.min.cjs"
+			}
+		},
+		"./array": {
+			"types": "./dist/common-fns.js.array.d.ts",
+			"import": {
+				"types": "./dist/common-fns.js.array.d.mts",
+				"default": "./dist/common-fns.js.array.min.mjs"
+			},
+			"require": {
+				"types": "./dist/common-fns.js.array.d.cts",
+				"default": "./dist/common-fns.js.array.min.cjs"
+			}
+		},
+		"./date": {
+			"types": "./dist/common-fns.js.date.d.ts",
+			"import": {
+				"types": "./dist/common-fns.js.date.d.mts",
+				"default": "./dist/common-fns.js.date.min.mjs"
+			},
+			"require": {
+				"types": "./dist/common-fns.js.date.d.cts",
+				"default": "./dist/common-fns.js.date.min.cjs"
+			}
+		},
+		"./map": {
+			"types": "./dist/common-fns.js.map.d.ts",
+			"import": {
+				"types": "./dist/common-fns.js.map.d.mts",
+				"default": "./dist/common-fns.js.map.min.mjs"
+			},
+			"require": {
+				"types": "./dist/common-fns.js.map.d.cts",
+				"default": "./dist/common-fns.js.map.min.cjs"
+			}
+		},
+		"./number": {
+			"types": "./dist/common-fns.js.number.d.ts",
+			"import": {
+				"types": "./dist/common-fns.js.number.d.mts",
+				"default": "./dist/common-fns.js.number.min.mjs"
+			},
+			"require": {
+				"types": "./dist/common-fns.js.number.d.cts",
+				"default": "./dist/common-fns.js.number.min.cjs"
+			}
+		},
+		"./object": {
+			"types": "./dist/common-fns.js.object.d.ts",
+			"import": {
+				"types": "./dist/common-fns.js.object.d.mts",
+				"default": "./dist/common-fns.js.object.min.mjs"
+			},
+			"require": {
+				"types": "./dist/common-fns.js.object.d.cts",
+				"default": "./dist/common-fns.js.object.min.cjs"
+			}
+		},
+		"./set": {
+			"types": "./dist/common-fns.js.set.d.ts",
+			"import": {
+				"types": "./dist/common-fns.js.set.d.mts",
+				"default": "./dist/common-fns.js.set.min.mjs"
+			},
+			"require": {
+				"types": "./dist/common-fns.js.set.d.cts",
+				"default": "./dist/common-fns.js.set.min.cjs"
+			}
+		},
+		"./string": {
+			"types": "./dist/common-fns.js.string.d.ts",
+			"import": {
+				"types": "./dist/common-fns.js.string.d.mts",
+				"default": "./dist/common-fns.js.string.min.mjs"
+			},
+			"require": {
+				"types": "./dist/common-fns.js.string.d.cts",
+				"default": "./dist/common-fns.js.string.min.cjs"
+			}
+		},
+		"./value": {
+			"types": "./dist/common-fns.js.value.d.ts",
+			"import": {
+				"types": "./dist/common-fns.js.value.d.mts",
+				"default": "./dist/common-fns.js.value.min.mjs"
+			},
+			"require": {
+				"types": "./dist/common-fns.js.value.d.cts",
+				"default": "./dist/common-fns.js.value.min.cjs"
+			}
+		},
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"typecheck": "tsc -b --noEmit",
+		"dts": "lazyconfig compile types --tsc tsconfig.lib.json --aec api-extractor.*.json --ext mts cts",
+		"build": "pnpm dts && rollup --config",
+		"dev": "tsc -p tsconfig.lib.json --watch",
+		"clean": "rimraf out-tsc dist coverage reports tsconfig.*.tsbuildinfo node_modules",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"@babel/core": "catalog:",
+		"@babel/preset-env": "catalog:",
+		"@babel/preset-typescript": "catalog:",
+		"@lazyconfig/cli": "catalog:",
+		"@lazyconfig/presets": "catalog:",
+		"@microsoft/api-extractor": "catalog:",
+		"@rollup/plugin-babel": "catalog:",
+		"@rollup/plugin-node-resolve": "catalog:",
+		"@rollup/plugin-terser": "catalog:",
+		"@swc/core": "catalog:",
+		"@swc/jest": "catalog:",
+		"@types/jest": "catalog:",
+		"@types/node": "catalog:",
+		"babel-plugin-annotate-pure-calls": "catalog:",
+		"jest": "catalog:",
+		"jest-junit": "catalog:",
+		"rimraf": "catalog:",
+		"rollup": "catalog:",
+		"typescript": "catalog:"
+	},
+	"keywords": [
+		"common-fns",
+		"common",
+		"javascript-utils",
+		"js-utils",
+		"utils",
+		"utility"
+	],
+	"sideEffects": false,
+	"packageManager": "pnpm@11.5.2",
+	"engines": {
+		"node": ">=22.0.0",
+		"pnpm": ">=10.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"funding": [
+		{
+			"type": "github",
+			"url": "https://github.com/sponsors/ruben-omh"
+		}
+	],
+	"homepage": "https://github.com/ruben-omh/common-fns/tree/main/packages/js#readme",
+	"bugs": {
+		"url": "https://github.com/ruben-omh/common-fns/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ruben-omh/common-fns",
+		"directory": "packages/js"
+	},
+	"author": "ruben-omh",
+	"license": "MIT"
+}
