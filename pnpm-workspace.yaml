@@ -37,7 +37,7 @@ catalog:
   "@commitlint/cli": "21.2.4"
   "@commitlint/config-conventional": "21.2.4"
   "@lazyconfig/cli": "0.2.0"
-  "@lazyconfig/presets": "0.1.1"
+  "@lazyconfig/presets": "0.1.2"
   "@eslint/js": "10.0.1"
   "@microsoft/api-extractor": "7.60.1"
   "@rollup/plugin-babel": "7.1.0"
