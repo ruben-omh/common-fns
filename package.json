@@ -17,7 +17,6 @@
 		"@changesets/changelog-github": "catalog:",
 		"@changesets/cli": "catalog:",
 		"@commitlint/cli": "catalog:",
-		"@commitlint/config-conventional": "catalog:",
 		"@lazyconfig/cli": "catalog:",
 		"@lazyconfig/presets": "catalog:",
 		"@eslint/js": "catalog:",
