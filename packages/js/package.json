@@ -12,9 +12,36 @@
 	"main": "./dist/common-fns.js.index.min.cjs",
 	"module": "./dist/common-fns.js.index.min.mjs",
 	"types": "./dist/common-fns.js.index.d.ts",
+	"typesVersions": {
+		"*": {
+			"array": [
+				"./dist/common-fns.js.array.d.ts"
+			],
+			"date": [
+				"./dist/common-fns.js.date.d.ts"
+			],
+			"map": [
+				"./dist/common-fns.js.map.d.ts"
+			],
+			"number": [
+				"./dist/common-fns.js.number.d.ts"
+			],
+			"object": [
+				"./dist/common-fns.js.object.d.ts"
+			],
+			"set": [
+				"./dist/common-fns.js.set.d.ts"
+			],
+			"string": [
+				"./dist/common-fns.js.string.d.ts"
+			],
+			"value": [
+				"./dist/common-fns.js.value.d.ts"
+			]
+		}
+	},
 	"exports": {
 		".": {
-			"types": "./dist/common-fns.js.index.d.ts",
 			"import": {
 				"types": "./dist/common-fns.js.index.d.mts",
 				"default": "./dist/common-fns.js.index.min.mjs"
@@ -25,7 +52,6 @@
 			}
 		},
 		"./array": {
-			"types": "./dist/common-fns.js.array.d.ts",
 			"import": {
 				"types": "./dist/common-fns.js.array.d.mts",
 				"default": "./dist/common-fns.js.array.min.mjs"
@@ -36,7 +62,6 @@
 			}
 		},
 		"./date": {
-			"types": "./dist/common-fns.js.date.d.ts",
 			"import": {
 				"types": "./dist/common-fns.js.date.d.mts",
 				"default": "./dist/common-fns.js.date.min.mjs"
@@ -47,7 +72,6 @@
 			}
 		},
 		"./map": {
-			"types": "./dist/common-fns.js.map.d.ts",
 			"import": {
 				"types": "./dist/common-fns.js.map.d.mts",
 				"default": "./dist/common-fns.js.map.min.mjs"
@@ -58,7 +82,6 @@
 			}
 		},
 		"./number": {
-			"types": "./dist/common-fns.js.number.d.ts",
 			"import": {
 				"types": "./dist/common-fns.js.number.d.mts",
 				"default": "./dist/common-fns.js.number.min.mjs"
@@ -69,7 +92,6 @@
 			}
 		},
 		"./object": {
-			"types": "./dist/common-fns.js.object.d.ts",
 			"import": {
 				"types": "./dist/common-fns.js.object.d.mts",
 				"default": "./dist/common-fns.js.object.min.mjs"
@@ -80,7 +102,6 @@
 			}
 		},
 		"./set": {
-			"types": "./dist/common-fns.js.set.d.ts",
 			"import": {
 				"types": "./dist/common-fns.js.set.d.mts",
 				"default": "./dist/common-fns.js.set.min.mjs"
@@ -91,7 +112,6 @@
 			}
 		},
 		"./string": {
-			"types": "./dist/common-fns.js.string.d.ts",
 			"import": {
 				"types": "./dist/common-fns.js.string.d.mts",
 				"default": "./dist/common-fns.js.string.min.mjs"
@@ -102,7 +122,6 @@
 			}
 		},
 		"./value": {
-			"types": "./dist/common-fns.js.value.d.ts",
 			"import": {
 				"types": "./dist/common-fns.js.value.d.mts",
 				"default": "./dist/common-fns.js.value.min.mjs"
