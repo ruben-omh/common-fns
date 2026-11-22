@@ -30,7 +30,6 @@ function normalizeText(text: string): string {
 }
 
 function getLocaleInfo(locale: string | undefined): LocaleInfo {
-	// NOSONAR
 	const cacheKey = locale ?? DEFAULT_LOCALE_KEY;
 	const cached = localeInfoCache.get(cacheKey);
 	if (cached) {
@@ -159,7 +158,6 @@ function toDayOrMonth(token: string): number | undefined {
  * parseDateInput("31/02/2026", { locale: "es-MX" }); // null
  */
 export function parseDateInput(input: string, options: ParseDateInputOptions = {}): Date | null {
-	// NOSONAR
 	const { allowTwoDigitYear = true, referenceYear = new Date().getFullYear() } = options;
 	const info = getLocaleInfo(options.locale);
 	const order = options.order ?? info.order;

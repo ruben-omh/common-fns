@@ -9,7 +9,7 @@ const STYLE_OPTIONS: Record<DateInputStyle, Intl.DateTimeFormatOptions> = {
 /** Constructing an Intl.DateTimeFormat is expensive, so one is kept per locale + style. */
 const formatterCache = new Map<string, Intl.DateTimeFormat>();
 
-const FIELD_TYPES: Record<string, "D" | "M" | "Y"> = { day: "D", month: "M", year: "Y" }; // NOSONAR
+const FIELD_TYPES: Record<string, "D" | "M" | "Y"> = { day: "D", month: "M", year: "Y" };
 
 const LETTERS_OR_DIGITS = /[\p{L}\p{M}\d]/u;
 

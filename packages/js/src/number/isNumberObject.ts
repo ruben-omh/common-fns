@@ -16,7 +16,6 @@ import { numberValueOf } from "./internal";
 // * Boxed Number is the intended target type, not a typo for `number`.
 // eslint-disable-next-line @typescript-eslint/no-wrapper-object-types -- boxed Number is the deliberate guard target
 export function isNumberObject(value: unknown): value is Number {
-	// NOSONAR
 	if (typeof value !== "object" || value === null) {
 		return false;
 	}
@@ -24,7 +23,6 @@ export function isNumberObject(value: unknown): value is Number {
 	// * `instanceof` is only a same-realm fast path; `objectToString` covers other realms,
 	// * and `numberValueOf` below is the real brand check.
 	if (!(value instanceof Number) && objectToString.call(value) !== "[object Number]") {
-		// NOSONAR
 		return false;
 	}
 

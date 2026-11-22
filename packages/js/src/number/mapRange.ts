@@ -30,7 +30,7 @@ export function mapRange(
 	let t = inverseLerp(inStart, inEnd, value);
 
 	if (options.clamp === true) {
-		t = t < 0 ? 0 : t > 1 ? 1 : t; // NOSONAR
+		t = t < 0 ? 0 : t > 1 ? 1 : t;
 	}
 
 	return lerp(outStart, outEnd, t);

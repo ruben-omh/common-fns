@@ -1,6 +1,6 @@
 // In order: an uppercase run before a capitalized word ("XML" in "XMLHttp"), a capitalized or
 // lowercase word, an uppercase run, a number, or a run of letters without case (CJK, Thai…).
-const WORD = /\p{Lu}+(?=\p{Lu}\p{Ll})|[\p{Lu}\p{Lt}]?\p{Ll}+|\p{Lu}+|\p{N}+|[\p{Lo}\p{M}]+/gu; // NOSONAR
+const WORD = /\p{Lu}+(?=\p{Lu}\p{Ll})|[\p{Lu}\p{Lt}]?\p{Ll}+|\p{Lu}+|\p{N}+|[\p{Lo}\p{M}]+/gu;
 
 /**
  * Splits `text` into words, at separators (spaces, `-`, `_`, punctuation) and case changes.

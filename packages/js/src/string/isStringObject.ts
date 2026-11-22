@@ -16,7 +16,6 @@ import { stringValueOf } from "./internal";
 // * Boxed String is the intended target type, not a typo for `string`.
 // eslint-disable-next-line @typescript-eslint/no-wrapper-object-types -- boxed String is the deliberate guard target
 export function isStringObject(value: unknown): value is String {
-	// NOSONAR
 	if (typeof value !== "object" || value === null) {
 		return false;
 	}
@@ -24,7 +23,6 @@ export function isStringObject(value: unknown): value is String {
 	// * `instanceof` is only a same-realm fast path; `objectToString` covers other realms,
 	// * and `stringValueOf` below is the real brand check.
 	if (!(value instanceof String) && objectToString.call(value) !== "[object String]") {
-		// NOSONAR
 		return false;
 	}
 

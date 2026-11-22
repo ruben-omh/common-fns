@@ -11,5 +11,5 @@ const REGEXP_SYNTAX = /[\\^$.*+?()[\]{}|/-]/g;
  * new RegExp(`^${escapeRegExp("1.5+")}$`).test("1.5+"); // true
  */
 export function escapeRegExp(text: string): string {
-	return text.replaceAll(REGEXP_SYNTAX, "\\$&"); // NOSONAR
+	return text.replaceAll(REGEXP_SYNTAX, "\\$&");
 }

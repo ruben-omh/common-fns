@@ -5,7 +5,7 @@
  * Excluded on purpose: control characters ("\r\n" is one grapheme), combining marks
  * (U+0300–U+036F, U+0483–U+0489), surrogates (emoji), ZWJ and variation selectors.
  */
-const SINGLE_UNIT_GRAPHEMES = /^[\x20-\x7E -˿Ͱ-ϿЀ-҂Ҋ-ԯ]*$/; // NOSONAR
+const SINGLE_UNIT_GRAPHEMES = /^[\x20-\x7E -˿Ͱ-ϿЀ-҂Ҋ-ԯ]*$/;
 
 export function hasOnlySingleUnitGraphemes(text: string): boolean {
 	return SINGLE_UNIT_GRAPHEMES.test(text);
