@@ -1,4 +1,6 @@
 export { deepFreeze } from "./deepFreeze";
+export { getOwnValueOr } from "./getOwnValueOr";
+export { isKeyOf } from "./isKeyOf";
 export { isPlainObject } from "./isPlainObject";
 export { mapObjectValues } from "./mapObjectValues";
 export { mergeDeep } from "./mergeDeep";
